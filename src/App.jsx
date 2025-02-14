@@ -1,10 +1,14 @@
 import React from 'react'
+import { Outlet } from 'react-router'
+
 
 function App() {
   return (
     <div>
-      <h1 className='text-3xl border bg-pink-300'>Codecamp Thailand</h1>
-      <button className="btn btn-success">OK</button>
+       <>
+        <p>Header Menu</p>
+        <Outlet />
+      </>
       </div>
   )
 }
